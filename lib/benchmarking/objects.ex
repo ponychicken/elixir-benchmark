@@ -18,6 +18,10 @@ defmodule Benchmarking.Objects do
 
   """
   def list_objects do
+    ## Select on the IDs
+    # Repo.all(from o in Object, select: [:id])
+
+    ## Select also the timestamps
     Repo.all(Object)
   end
 
