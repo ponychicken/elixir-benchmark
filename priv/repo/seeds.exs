@@ -9,3 +9,8 @@
 #
 # We recommend using the bang functions (`insert!`, `update!`
 # and so on) as they will fail if something goes wrong.
+for _ <- 1..500000 do
+  Benchmarking.Repo.insert!(%Benchmarking.Objects.Object{
+    deleted_at: DateTime.truncate(DateTime.utc_now(), :second)
+  })
+end

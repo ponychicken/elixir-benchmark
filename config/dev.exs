@@ -2,8 +2,8 @@ import Config
 
 # Configure your database
 config :benchmarking, Benchmarking.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "dev",
+  password: "dev",
   hostname: "localhost",
   database: "benchmarking_dev",
   stacktrace: true,
