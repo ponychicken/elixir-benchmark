@@ -17,8 +17,7 @@ defmodule BenchmarkingWeb.ObjectJSON do
 
   defp data(%Object{} = object) do
     %{
-      id: object.id,
-      deleted_at: object.deleted_at
+      id: object.id
     }
   end
 end
